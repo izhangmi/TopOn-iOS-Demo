@@ -1,0 +1,6 @@
+framework module AMPSAdSDK {
+  umbrella header "AMPSAdSDK.h"
+  export *
+
+  module * { export * }
+}

@@ -1,0 +1,77 @@
+# Uncomment the next line to define a global platform for your project
+
+platform :ios, '14.0'
+project 'AnyThinkSDKDemo.xcodeproj'
+
+def share_pods
+  
+  pod 'Masonry'
+  pod 'SDWebImage'
+  pod 'MJRefresh'
+
+#  pod 'SVGKit','3.0.0'
+  pod 'CocoaLumberjack', '3.8.5'
+end
+
+target 'AnyThinkSDKDemo' do
+  
+  post_install do |installer|
+        installer.generated_projects.each do |project|
+          project.targets.each do |target|
+              target.build_configurations.each do |config|
+                  config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+               end
+          end
+        end
+      end
+  
+  # Comment the next line if you don't want to use dynamic frameworks
+#  use_frameworks!
+  share_pods
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'AnyThinkiOS','6.4.87'
+#pod 'TPNiOS', ' 6.4.87'
+  pod 'BeiZiSDK-iOS/BeiZiSDK-iOS', '~> 4.90.6.2'
+
+
+
+
+#https://topon-sdk-release.oss-cn-hangzhou.aliyuncs.com/SDK_Release/v6.3.30/iOS/AnyThink_mediation/AnyThinkiOS.zip
+  
+## 本地pod
+#  pod 'LocalThirdPartySDK/core', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/admob', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/applovin', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/baidu', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/chartboost', :path=> 'LSDK/'
+##  pod 'LocalThirdPartySDK/facebook', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/fyber', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/gdt', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/inmobi', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/ironsource', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/kidoz', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/kuaishou', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/maio', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/applovin', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/AppLovinMediationAdColonyAdapter', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/AppLovinMediationChartboostAdapter', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/AppLovinMediationTapjoyAdapter', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/mintegral', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/mobrain', :path=> 'LSDK/'
+##  pod 'LocalThirdPartySDK/mopub', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/MyTarget', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/nend', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/ogury', :path=> 'LSDK/'
+##  pod 'LocalThirdPartySDK/pangle_noChina', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/pangle_china_common', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/pangle_China', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/klevin', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/sigmob', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/startapp', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/tapjoy', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/unityads', :path=> 'LSDK/'
+#  pod 'LocalThirdPartySDK/vungle', :path=> 'LSDK/'
+
+end 

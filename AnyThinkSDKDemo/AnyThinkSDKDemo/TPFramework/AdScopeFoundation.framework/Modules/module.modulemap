@@ -1,0 +1,6 @@
+framework module AdScopeFoundation {
+  umbrella header "AdScopeFoundation.h"
+  export *
+
+  module * { export * }
+}
