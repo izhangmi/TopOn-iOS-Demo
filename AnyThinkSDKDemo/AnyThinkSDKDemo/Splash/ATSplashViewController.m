@@ -204,6 +204,11 @@
     // 设置开屏广告中支持广告源设置加载超时时间，并不是整个广告位请求的时间
     [mutableDict setValue:@5.5 forKey:kATSplashExtraTolerateTimeoutKey];
     
+    // HJC测试: 在此处测试 AMPS Splash 开屏广告
+    // 1. 在 TopOn 后台配置 AMPS 渠道，设置 appid 和 unitid
+    // 2. 在 placementIDs 中添加 AMPS 的 placementID，例如: @"AMPS": @"your_placement_id"
+    // 3. 将下面的 placementID 改为 self.placementID 或直接使用你的 AMPS placementID
+    // 4. 调用 loadSplashAd 方法加载广告，等待回调成功后调用 showSplashAd 展示
     [[ATAdManager sharedManager] loadADWithPlacementID:@"b6621e416e57af"
                                                  extra:mutableDict
                                               delegate:self

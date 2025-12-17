@@ -121,6 +121,11 @@
         // 是否开启自适应高度，默认关闭，设置为yes时打开
         kATNativeAdSizeToFitKey:@YES,
     };
+    // HJC测试: 在此处测试 AMPS Native 模板广告
+    // 1. 在 TopOn 后台配置 AMPS 渠道，设置 appid 和 unitid
+    // 2. 在 placementIDs 中添加 AMPS 的 placementID，例如: @"AMPS(Template)": @"your_placement_id"
+    // 3. 确保 serverInfo 中不设置 renderType 或设置为 0（0表示模板广告）
+    // 4. 调用 loadAd 方法加载广告，等待回调成功后调用 showAd 展示
     [[ATAdManager sharedManager] loadADWithPlacementID:self.placementID extra:extra delegate:self];
 }
 

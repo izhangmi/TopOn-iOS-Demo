@@ -167,6 +167,10 @@
     if (_isAuto) {
         [[ATInterstitialAutoAdManager sharedInstance] showAutoLoadInterstitialWithPlacementID:self.placementID scene:KTopOnInterstitialSceneID inViewController:self delegate:self];
     } else {
+        // HJC测试: 在此处测试 AMPS Interstitial 插屏广告
+        // 1. 在 TopOn 后台配置 AMPS 渠道，设置 appid 和 unitid
+        // 2. 在 placementIDs_inter 或 placementIDs_fullScreen 中添加 AMPS 的 placementID，例如: @"AMPS": @"your_placement_id"
+        // 3. 调用 loadAd 方法加载广告，等待回调成功后调用 showInterstitialAd 展示
         [[ATAdManager sharedManager] loadADWithPlacementID:self.placementID extra:extraDic delegate:self];
     }
 }

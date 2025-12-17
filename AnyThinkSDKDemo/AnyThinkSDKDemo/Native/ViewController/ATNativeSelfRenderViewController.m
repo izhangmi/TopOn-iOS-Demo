@@ -215,6 +215,11 @@
         */
         kATExtraInfoNativeAdSizeKey:[NSValue valueWithCGSize:size]
     };
+    // HJC测试: 在此处测试 AMPS Native 自渲染广告
+    // 1. 在 TopOn 后台配置 AMPS 渠道，设置 appid 和 unitid
+    // 2. 在 placementIDs_native 中添加 AMPS 的 placementID，例如: @"AMPS(SelfRender)": @"your_placement_id"
+    // 3. 确保 serverInfo 中设置 renderType = 1（1表示自渲染广告）
+    // 4. 调用 loadAd 方法加载广告，等待回调成功后调用 showAd 展示
     [[ATAdManager sharedManager] loadADWithPlacementID:self.placementID extra:extra delegate:self];
 }
 
