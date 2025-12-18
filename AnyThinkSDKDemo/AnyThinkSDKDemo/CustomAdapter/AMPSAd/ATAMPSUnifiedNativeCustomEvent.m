@@ -65,7 +65,8 @@
             NSString *priceStr = [NSString stringWithFormat:@"%ld", (long)[nativeView eCPM]];
             ATAMPSCustomBiddingRequest *request = [[ATAMPSC2SBiddingRequestManager sharedInstance] getRequestItemWithUnitID:self.spaceId];
             // HJC: 构造 ATBidInfo 对象用于返回给 SDK，customObject 使用 nativeView
-            ATBidInfo *bidInfo = [ATBidInfo bidInfoC2SWithPlacementID:request.placementID unitGroupUnitID:request.unitGroup.unitID adapterClassString:request.unitGroup.adapterClassString price:priceStr currencyType:ATBiddingCurrencyTypeCNYCents expirationInterval:request.unitGroup.bidTokenTime customObject:nativeView];
+            // HJC: 使用 SDK 6.4.93 最新 API，添加 sortPrice 参数（用于 waterfall 排序，通常与 price 相同）
+            ATBidInfo *bidInfo = [ATBidInfo bidInfoC2SWithPlacementID:request.placementID unitGroupUnitID:request.unitGroup.unitID adapterClassString:request.unitGroup.adapterClassString price:priceStr sortPrice:priceStr currencyType:ATBiddingCurrencyTypeCNYCents expirationInterval:request.unitGroup.bidTokenTime customObject:nativeView];
             bidInfo.networkFirmID = request.unitGroup.networkFirmID;
             if (request.bidCompletion) {
                 request.bidCompletion(bidInfo, nil);

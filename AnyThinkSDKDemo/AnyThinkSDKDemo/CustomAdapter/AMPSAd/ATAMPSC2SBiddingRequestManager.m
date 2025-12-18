@@ -8,7 +8,6 @@
 
 #import "ATAMPSC2SBiddingRequestManager.h"
 
-// HJC: AMPSAd C2S 竞价请求管理器实现
 @interface ATAMPSC2SBiddingRequestManager ()
 
 @property (nonatomic, strong) NSMutableDictionary *biddingAdStorageAccessor;
@@ -27,26 +26,22 @@
     return sharedInstance;
 }
 
-// HJC: 根据 unitID 获取竞价请求对象
 - (ATAMPSCustomBiddingRequest *)getRequestItemWithUnitID:(NSString *)unitID {
     @synchronized (self) {
         return [self.biddingAdStorageAccessor objectForKey:unitID];
     }
 }
 
-// HJC: 移除指定 unitID 的竞价请求对象
 - (void)removeRequestItemWithUnitID:(NSString *)unitID {
     @synchronized (self) {
         [self.biddingAdStorageAccessor removeObjectForKey:unitID];
     }
 }
 
-// HJC: 开始竞价请求，存储请求对象
 - (void)startWithRequestItem:(ATAMPSCustomBiddingRequest *)request {
     if (request.unitID) {
         [self.biddingAdStorageAccessor setObject:request forKey:request.unitID];
-        // HJC: 设置代理对象
-        if ([request.customObject respondsToSelector:@selector(setDelegate:)]) {
+        if (request.customObject && [request.customObject respondsToSelector:@selector(setDelegate:)]) {
             [request.customObject setValue:request.customEvent forKey:@"delegate"];
         }
     }

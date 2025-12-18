@@ -10,7 +10,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-// HJC: AMPSAd Interstitial 广告自定义适配器
 @interface ATAMPSInterstitialCustomAdapter : NSObject
 
 @end

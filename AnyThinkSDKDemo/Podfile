@@ -31,7 +31,8 @@ target 'AnyThinkSDKDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'AnyThinkiOS','6.4.87'
+#  pod 'AnyThinkiOS','6.4.87'
+pod 'AnyThinkiOS'
 #pod 'TPNiOS', ' 6.4.87'
   pod 'BeiZiSDK-iOS/BeiZiSDK-iOS', '~> 4.90.6.2'
 
@@ -73,5 +74,33 @@ target 'AnyThinkSDKDemo' do
 #  pod 'LocalThirdPartySDK/tapjoy', :path=> 'LSDK/'
 #  pod 'LocalThirdPartySDK/unityads', :path=> 'LSDK/'
 #  pod 'LocalThirdPartySDK/vungle', :path=> 'LSDK/'
+
+#pod 'AnyThinkiOS','6.4.93'
+#pod 'AnyThinkMaioSDKAdapter','6.4.93'
+#pod 'AnyThinkStartAppSDKAdapter','6.4.93'
+#pod 'AnyThinkBaiduSDKAdapter','6.4.93.1'
+##Baidu--4.80 SDK,podfile文件顶部增加 source 'https://github.com/CocoaPods/Specs.git'
+#pod 'AnyThinkKuaiShouSDKAdapter','6.4.93.1'
+#pod 'AnyThinkAQYSDKAdapter','6.4.93'
+#pod 'AnyThinkSigmobSDKAdapter','6.4.93'
+#pod 'AnyThinkVungleSDKAdapter','6.4.93'
+#pod 'AnyThinkUnityAdsSDKAdapter','6.4.93.5'
+#pod 'AnyThinkIronSourceSDKAdapter','6.4.93.1'
+#pod 'AnyThinkTTSDKAdapter','6.4.93.5'
+#pod 'AnyThinkTanxSDKAdapter','6.4.93.1'
+#pod 'AnyThinkKlevinSDKAdapter','6.4.93'
+#pod 'AnyThinkQMSDKAdapter','6.4.93.1'
+#pod 'AnyThinkJDSDKAdapter','6.4.93'
+#pod 'AnyThinkKidozSDKAdapter','6.4.93'
+#pod 'AnyThinkFacebookSDKAdapter','6.4.93'
+#pod 'AnyThinkAdmobSDKAdapter','6.4.93.1'
+#pod 'AnyThinkInmobiSDKAdapter','6.4.93'
+#pod 'AnyThinkApplovinSDKAdapter','6.4.93'
+#pod 'AnyThinkMintegralSDKAdapter','6.4.93'
+#pod 'AnyThinkGDTSDKAdapter','6.4.93'
+#pod 'AnyThinkChartboostSDKAdapter','6.4.93'
+#pod 'AnyThinkMyTargetSDKAdapter','6.4.93'
+#pod 'AnyThinkFyberSDKAdapter','6.4.93'
+#pod 'AnyThinkOgurySDKAdapter','6.4.93'
 
 end 

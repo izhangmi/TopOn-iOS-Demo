@@ -8,7 +8,6 @@
 
 #import "ATAMPSCustomBiddingRequest.h"
 
-// HJC: AMPSAd 自定义竞价请求实现
 @implementation ATAMPSCustomBiddingRequest
 
 @end

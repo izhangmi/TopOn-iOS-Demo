@@ -11,7 +11,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-// HJC: AMPSAd Interstitial 广告自定义事件处理类
 @interface ATAMPSInterstitialCustomEvent : ATInterstitialCustomEvent <AMPSInterstitialAdDelegate>
 
 @property (nonatomic, strong) NSDate *expireDate;
