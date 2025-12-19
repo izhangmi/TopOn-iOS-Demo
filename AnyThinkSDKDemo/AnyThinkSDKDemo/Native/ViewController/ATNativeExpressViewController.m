@@ -5,7 +5,7 @@
 //  Created by Topon on 7/28/22.
 //  Copyright © 2022 抽筋的灯. All rights reserved.
 //
-
+//  jad的 1是模版渲染，2是自渲染
 #import "ATNativeExpressViewController.h"
 #import "ATNativeShowViewController.h"
 #import "MTAutolayoutCategories.h"
@@ -41,15 +41,17 @@
 
 - (NSDictionary<NSString *,NSString *> *)placementIDs {
     return @{
-        @"All":                       @"b62e797b5727c0",
-        @"Facebook(NativeBanner)":    @"b62b41c7781130",
-        @"Mintegral(Template)":       @"b62b41c7a6ecd5",
-        @"GDT(Template)":             @"b62b420b01bcd6",
-        @"CSJ(Template)":             @"b62ea1cad196bd",
-        @"Baidu(Template)":           @"b62ea1d100d9ba",
-        @"Kuaishou(Template)":        @"b62ea1d6c5b92f",
-        @"Klevin(Template)":          @"b62ea1e3f2a62b",
-        @"MyTarget(Template)":        @"b62ea1e8da3189",
+        @"AMPS(Template)":                @"b66220da6d169a",  // HJC测试: AMPS 原生模板广告位ID（非竞价：unitid=125572, renderType=0）
+        @"AMPS(Template-Bidding)":        @"b66220da6d169a",  // AAAAA: 竞价模式测试用（竞价：unitid=125569, renderType=0），需要在后台配置为竞价模式
+        @"All":                           @"b62e797b5727c0",
+        @"Facebook(NativeBanner)":        @"b62b41c7781130",
+        @"Mintegral(Template)":           @"b62b41c7a6ecd5",
+        @"GDT(Template)":                 @"b62b420b01bcd6",
+        @"CSJ(Template)":                 @"b62ea1cad196bd",
+        @"Baidu(Template)":               @"b62ea1d100d9ba",
+        @"Kuaishou(Template)":            @"b62ea1d6c5b92f",
+        @"Klevin(Template)":              @"b62ea1e3f2a62b",
+        @"MyTarget(Template)":            @"b62ea1e8da3189",
     };
 }
 
@@ -113,6 +115,11 @@
 #pragma mark - Action
 //广告加载
 - (void)loadAd {
+    // AAAAA: 切换测试竞价/非竞价模式（实际上竞价/非竞价由 TopOn 后台配置决定）
+    // 如果要测试不同的广告源配置（不同 unitid），可以在 placementIDs 中选择不同的项
+    // 非竞价模式：选择 "AMPS(Template)"
+    // 竞价模式：选择 "AMPS(Template-Bidding)"（需要在后台配置为竞价模式，renderType=0）
+    
     CGSize size = CGSizeMake(kScreenW, 350);
 
     NSDictionary *extra = @{
@@ -121,11 +128,7 @@
         // 是否开启自适应高度，默认关闭，设置为yes时打开
         kATNativeAdSizeToFitKey:@YES,
     };
-    // HJC测试: 在此处测试 AMPS Native 模板广告
-    // 1. 在 TopOn 后台配置 AMPS 渠道，设置 appid 和 unitid
-    // 2. 在 placementIDs 中添加 AMPS 的 placementID，例如: @"AMPS(Template)": @"your_placement_id"
-    // 3. 确保 serverInfo 中不设置 renderType 或设置为 0（0表示模板广告）
-    // 4. 调用 loadAd 方法加载广告，等待回调成功后调用 showAd 展示
+    NSLog(@"HJC测试: 加载广告（模板渲染），placementID = %@", self.placementID);
     [[ATAdManager sharedManager] loadADWithPlacementID:self.placementID extra:extra delegate:self];
 }
 

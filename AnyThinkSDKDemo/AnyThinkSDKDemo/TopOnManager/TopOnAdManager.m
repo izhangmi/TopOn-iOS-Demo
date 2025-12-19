@@ -84,7 +84,8 @@
     
     [ATAPI setLogEnabled:YES];
         
-    [ATAPI integrationChecking];
+    // HJC: 注释掉 integrationChecking，避免 ADX SDK 缺失警告（如果不需要 ADX 功能）
+    // [ATAPI integrationChecking];
 
     [ATAPI setHeaderBiddingTestModeWithDeviceID:@"1F7DB84C-5DCF-4095-B059-F18A7D17946C"];
     // set personaliz state

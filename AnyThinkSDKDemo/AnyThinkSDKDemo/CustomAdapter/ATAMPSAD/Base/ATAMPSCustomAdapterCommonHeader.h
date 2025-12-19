@@ -1,5 +1,5 @@
 //
-//  ATAMPSSplashCustomAdapter123567.h
+//  ATAMPSCustomAdapterCommonHeader.h
 //  AnyThinkSDKDemo
 //
 //  Created by imac on 12/16/2025.
@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AnyThinkSDK/AnyThinkSDK.h>
+#import <AMPSAdSDK/AMPSAdSDK.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ATAMPSSplashCustomAdapter123567 : NSObject
-
-@end
+@class ATAMPSCustomInitAdapter;
 
 NS_ASSUME_NONNULL_END
+

@@ -6,7 +6,7 @@
 //
 
 #import "ATRewardVideoViewController.h"
-#import <AnyThinkRewardedVideo/AnyThinkRewardedVideo.h>
+#import <AnyThinkSDK/AnyThinkSDK.h>
 #import "ATModelButton.h"
 
 @interface ATRewardVideoViewController () <ATRewardedVideoDelegate>
@@ -41,7 +41,7 @@
 - (NSDictionary<NSString *,NSString *> *)placementIDs {
     
     return @{
-        @"ADX":                 @"b687c643aab73e",
+        // @"ADX":                 @"b687c643aab73e", // HJC: 注释掉 ADX，如需使用请先添加 ADX SDK
         @"All":                 @"b687c643aab73e",
         @"Facebook":            @"b687c643aab73e"
     };

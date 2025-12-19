@@ -10,7 +10,7 @@
 #import "TopOnAdManager.h"
 #import <AMPSAdSDK/AMPSAdSDK.h>
 #import <BeiZiSDK/BeiZiSDK.h>
-
+#import <AnyThinkSDK/AnyThinkSDK.h>
 @interface AppDelegate ()
 
 @end
@@ -20,8 +20,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    NSLog(@"当前广告的版本1: %@",[AMPSAdSDKManager sdkVersion]);
-    NSLog(@"当前广告的版本2: %@",[BeiZiSDKManager sdkVersion]);
+    NSLog(@"AnyThinkiOS SDK 版本: %@", [[ATAPI sharedInstance] version]);
+    NSLog(@"AMPSAd SDK 版本: %@", [AMPSAdSDKManager sdkVersion]);
+    NSLog(@"BeiZi SDK 版本: %@", [BeiZiSDKManager sdkVersion]);
     
     [[TopOnAdManager sharedManager] initTopOnSDK];
     return YES;

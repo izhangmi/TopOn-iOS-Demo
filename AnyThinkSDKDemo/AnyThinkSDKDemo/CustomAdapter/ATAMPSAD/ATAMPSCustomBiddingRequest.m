@@ -8,7 +8,7 @@
 
 #import "ATAMPSCustomBiddingRequest.h"
 
+// HJC: ATAMPS 自定义竞价请求对象实现
 @implementation ATAMPSCustomBiddingRequest
 
 @end
-

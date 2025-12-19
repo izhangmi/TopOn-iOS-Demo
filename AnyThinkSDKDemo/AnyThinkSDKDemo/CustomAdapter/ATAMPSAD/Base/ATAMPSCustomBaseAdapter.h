@@ -1,5 +1,5 @@
 //
-//  ATAMPSNativeCustomAdapter.h
+//  ATAMPSCustomBaseAdapter.h
 //  AnyThinkSDKDemo
 //
 //  Created by imac on 12/16/2025.
@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ATAMPSCustomAdapterCommonHeader.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-// HJC: AMPSAd Native 广告自定义适配器
-@interface ATAMPSNativeCustomAdapter : NSObject
+@interface ATAMPSCustomBaseAdapter : ATBaseMediationAdapter
 
 @end
 

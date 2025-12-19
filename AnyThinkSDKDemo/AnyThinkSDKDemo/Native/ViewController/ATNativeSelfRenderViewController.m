@@ -52,9 +52,11 @@
 
 - (NSDictionary<NSString *,NSString *> *)placementIDs_native {
     return @{
-        @"ADX模板":                   @"b6329582f88dcb",
-        @"ADX自渲染":                   @"b67723df37bd58",
-        @"All":                       @"b67723df37bd58",
+        @"AMPS(SelfRender)":              @"b67723df37bd58",  // HJC测试: AMPS 原生自渲染广告位ID（非竞价：unitid=125578, renderType=1）
+        @"AMPS(SelfRender-Bidding)":      @"b67723df37bd58",  // AAAAA: 竞价模式测试用（竞价：unitid=125575, renderType=1），需要在后台配置为竞价模式
+        // @"ADX模板":                   @"b6329582f88dcb", // HJC: 注释掉 ADX，如需使用请先添加 ADX SDK
+        // @"ADX自渲染":                   @"b67723df37bd58", // HJC: 注释掉 ADX，如需使用请先添加 ADX SDK
+        @"All":                           @"b67723df37bd58",
         @"Facebook":                  @"b62b420c00ebc4",
         @"AdMob":                     @"b62b420bf038e3",
         @"Inmobi":                    @"b62b420be79b6d",
@@ -203,6 +205,11 @@
 
 //广告加载
 - (void)loadAd {
+    // AAAAA: 切换测试竞价/非竞价模式（实际上竞价/非竞价由 TopOn 后台配置决定）
+    // 如果要测试不同的广告源配置（不同 unitid），可以在 placementIDs_native 中选择不同的项
+    // 非竞价模式：选择 "AMPS(SelfRender)"
+    // 竞价模式：选择 "AMPS(SelfRender-Bidding)"（需要在后台配置为竞价模式，renderType=1）
+    
     CGSize size = CGSizeMake(kScreenW, 350);
     if ([self.placementIDs_draw.allValues containsObject:self.placementID]) {
         size = self.view.frame.size;
@@ -215,11 +222,7 @@
         */
         kATExtraInfoNativeAdSizeKey:[NSValue valueWithCGSize:size]
     };
-    // HJC测试: 在此处测试 AMPS Native 自渲染广告
-    // 1. 在 TopOn 后台配置 AMPS 渠道，设置 appid 和 unitid
-    // 2. 在 placementIDs_native 中添加 AMPS 的 placementID，例如: @"AMPS(SelfRender)": @"your_placement_id"
-    // 3. 确保 serverInfo 中设置 renderType = 1（1表示自渲染广告）
-    // 4. 调用 loadAd 方法加载广告，等待回调成功后调用 showAd 展示
+    NSLog(@"HJC测试: 加载广告（自渲染），placementID = %@", self.placementID);
     [[ATAdManager sharedManager] loadADWithPlacementID:self.placementID extra:extra delegate:self];
 }
 

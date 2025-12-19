@@ -6,41 +6,32 @@
 //  Copyright © 2025 抽筋的灯. All rights reserved.
 //
 
-#import <AnyThinkNative/AnyThinkNative.h>
+#import <AnyThinkSDK/AnyThinkSDK.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSInteger, AMPSAdFormat) {
-    AMPSAdFormatSplash = 0,
-    AMPSAdFormatNative = 1,
-    AMPSAdFormatInterstitial = 2
+// HJC: ATAMPS 广告格式枚举
+typedef NS_ENUM(NSInteger, ATAMPSAdFormat) {
+    ATAMPSAdFormatSplash = 0,
+    ATAMPSAdFormatNative = 1,
+    ATAMPSAdFormatInterstitial = 2
 };
 
+// HJC: ATAMPS 自定义竞价请求对象
 @interface ATAMPSCustomBiddingRequest : NSObject
 
 @property (nonatomic, strong) id customObject;
-
 @property (nonatomic, strong) ATUnitGroupModel *unitGroup;
-
-@property (nonatomic, strong) ATAdCustomEvent *customEvent;
-
+@property (nonatomic, strong) id customEvent; // HJC: 使用 id 类型，支持不同类型的 delegate
 @property (nonatomic, assign) NSTimeInterval tolerateTimeout;
-
 @property (nonatomic, copy) NSString *unitID;
-
 @property (nonatomic, copy) NSString *placementID;
-
 @property (nonatomic, copy) NSString *publisherID;
-
 @property (nonatomic, copy) NSDictionary *extraInfo;
-
-@property (nonatomic, assign) AMPSAdFormat adType;
-
+@property (nonatomic, assign) ATAMPSAdFormat adType;
 @property (nonatomic, copy) void(^bidCompletion)(ATBidInfo * _Nullable bidInfo, NSError * _Nullable error);
-
 @property (nonatomic, copy) NSArray<NSDictionary *> *assets;
 
 @end
 
 NS_ASSUME_NONNULL_END
-

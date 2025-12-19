@@ -30,31 +30,23 @@
 		2F8DE68B2DCE012C006CB9F3 /* UIColor+TGCustomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8DE6822DCE012C006CB9F3 /* UIColor+TGCustomColor.m */; };
 		2F8DE68C2DCE012C006CB9F3 /* NSString+TGCustomString.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8DE6842DCE012C006CB9F3 /* NSString+TGCustomString.m */; };
 		2F8DE68D2DCE012C006CB9F3 /* UIView+TGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8DE6862DCE012C006CB9F3 /* UIView+TGExtension.m */; };
-		2F8DE6A12DCE0E0E006CB9F3 /* ATBZNativeCustomRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8DE69B2DCE0E0E006CB9F3 /* ATBZNativeCustomRenderer.m */; };
-		2F8DE6A22DCE0E0E006CB9F3 /* ATBZCustomBiddingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8DE6912DCE0E0E006CB9F3 /* ATBZCustomBiddingRequest.m */; };
-		2F8DE6A32DCE0E0E006CB9F3 /* ATBZSplashCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8DE69F2DCE0E0E006CB9F3 /* ATBZSplashCustomEvent.m */; };
-		2F8DE6A42DCE0E0E006CB9F3 /* ATBZC2SBiddingRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8DE68F2DCE0E0E006CB9F3 /* ATBZC2SBiddingRequestManager.m */; };
-		2F8DE6A52DCE0E0E006CB9F3 /* ATBZNativeADCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8DE6972DCE0E0E006CB9F3 /* ATBZNativeADCustomEvent.m */; };
-		2F8DE6A62DCE0E0E006CB9F3 /* ATBZNativeCustomAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8DE6992DCE0E0E006CB9F3 /* ATBZNativeCustomAdapter.m */; };
-		2F8DE6A72DCE0E0E006CB9F3 /* ATBZInterstitialCustomAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8DE6932DCE0E0E006CB9F3 /* ATBZInterstitialCustomAdapter.m */; };
-		2F8DE6A82DCE0E0E006CB9F3 /* ATBZInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8DE6952DCE0E0E006CB9F3 /* ATBZInterstitialCustomEvent.m */; };
-		2F8DE6A92DCE0E0E006CB9F3 /* ATBZSplashCustomAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8DE69D2DCE0E0E006CB9F3 /* ATBZSplashCustomAdapter.m */; };
-		2F9A7DE82E2C8EBA00787A77 /* ATBZRewardedVideoCustomAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A7DE72E2C8EBA00787A77 /* ATBZRewardedVideoCustomAdapter.m */; };
-		2F9A7DEB2E2C8F8A00787A77 /* ATBZRewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A7DEA2E2C8F8A00787A77 /* ATBZRewardedVideoCustomEvent.m */; };
 		4B8C3E162BBADE1500D290AB /* ATMediaVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8C3E142BBADE1500D290AB /* ATMediaVideoViewController.m */; };
 		56152C3F2902B59A00530FF6 /* ATTMCustomSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56152C382902B59A00530FF6 /* ATTMCustomSplashViewController.m */; };
 		88BA70FF2EF14F4B0067F108 /* AdScopeFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BA70FC2EF14F4B0067F108 /* AdScopeFoundation.framework */; };
 		88BA71002EF14F4B0067F108 /* AMPSAdSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BA70FD2EF14F4B0067F108 /* AMPSAdSDK.xcframework */; };
-		88BA73732EF3DD130067F108 /* ATAMPSNativeCustomRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA73692EF3DD130067F108 /* ATAMPSNativeCustomRenderer.m */; };
-		88BA73742EF3DD130067F108 /* ATAMPSInterstitialCustomAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA73632EF3DD130067F108 /* ATAMPSInterstitialCustomAdapter.m */; };
-		88BA73752EF3DD130067F108 /* ATAMPSInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA73652EF3DD130067F108 /* ATAMPSInterstitialCustomEvent.m */; };
-		88BA73762EF3DD130067F108 /* ATAMPSNativeCustomAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA73672EF3DD130067F108 /* ATAMPSNativeCustomAdapter.m */; };
-		88BA73772EF3DD130067F108 /* ATAMPSCustomBiddingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA73612EF3DD130067F108 /* ATAMPSCustomBiddingRequest.m */; };
-		88BA73782EF3DD130067F108 /* ATAMPSUnifiedNativeCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA73712EF3DD130067F108 /* ATAMPSUnifiedNativeCustomEvent.m */; };
-		88BA73792EF3DD130067F108 /* ATAMPSC2SBiddingRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA735F2EF3DD130067F108 /* ATAMPSC2SBiddingRequestManager.m */; };
-		88BA737A2EF3DD130067F108 /* ATAMPSSplashCustomAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA736D2EF3DD130067F108 /* ATAMPSSplashCustomAdapter.m */; };
-		88BA737B2EF3DD130067F108 /* ATAMPSNativeExpressCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA736B2EF3DD130067F108 /* ATAMPSNativeExpressCustomEvent.m */; };
-		88BA737C2EF3DD130067F108 /* ATAMPSSplashCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA736F2EF3DD130067F108 /* ATAMPSSplashCustomEvent.m */; };
+		88BA76652EF553070067F108 /* ATAMPSCustomSplashAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA76542EF553070067F108 /* ATAMPSCustomSplashAdapter.m */; };
+		88BA76662EF553070067F108 /* ATAMPSCustomInitAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA76412EF553070067F108 /* ATAMPSCustomInitAdapter.m */; };
+		88BA76672EF553070067F108 /* ATAMPSCustomSplashDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA76562EF553070067F108 /* ATAMPSCustomSplashDelegate.m */; };
+		88BA76682EF553070067F108 /* ATAMPSCustomBiddingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA765C2EF553070067F108 /* ATAMPSCustomBiddingRequest.m */; };
+		88BA76692EF553070067F108 /* ATAMPSCustomNativeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA764D2EF553070067F108 /* ATAMPSCustomNativeObject.m */; };
+		88BA766A2EF553070067F108 /* ATAMPSCustomNativeUnifiedDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA76512EF553070067F108 /* ATAMPSCustomNativeUnifiedDelegate.m */; };
+		88BA766B2EF553070067F108 /* ATAMPSCustomNativeExpressDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA764B2EF553070067F108 /* ATAMPSCustomNativeExpressDelegate.m */; };
+		88BA766C2EF553070067F108 /* ATAMPSCustomInterstitialAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA76442EF553070067F108 /* ATAMPSCustomInterstitialAdapter.m */; };
+		88BA766D2EF553070067F108 /* ATAMPSCustomBaseAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA763F2EF553070067F108 /* ATAMPSCustomBaseAdapter.m */; };
+		88BA766E2EF553070067F108 /* ATAMPSCustomInterstitialDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA76462EF553070067F108 /* ATAMPSCustomInterstitialDelegate.m */; };
+		88BA766F2EF553070067F108 /* ATAMPSC2SBiddingRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA765A2EF553070067F108 /* ATAMPSC2SBiddingRequestManager.m */; };
+		88BA76702EF553070067F108 /* ATAMPSCustomNativeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA76492EF553070067F108 /* ATAMPSCustomNativeAdapter.m */; };
+		88BA76712EF553070067F108 /* ATAMPSCustomNativeRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA764F2EF553070067F108 /* ATAMPSCustomNativeRenderer.m */; };
 		9B1A9D6C288E82C800CC16FA /* ATNativeMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A9D6A288E82C800CC16FA /* ATNativeMainViewController.m */; };
 		9B1A9F5E288F882800CC16FA /* ATPasterVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A9F5D288F882800CC16FA /* ATPasterVideoViewController.m */; };
 		9B1A9F66288FC9A500CC16FA /* ATDrawListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A9F65288FC9A500CC16FA /* ATDrawListViewController.m */; };
@@ -153,66 +145,41 @@
 		2F8DE6862DCE012C006CB9F3 /* UIView+TGExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TGExtension.m"; sourceTree = "<group>"; };
 		2F8DE6872DCE012C006CB9F3 /* UIImage+TGCustomImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+TGCustomImage.h"; sourceTree = "<group>"; };
 		2F8DE6882DCE012C006CB9F3 /* UIImage+TGCustomImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TGCustomImage.m"; sourceTree = "<group>"; };
-		2F8DE68E2DCE0E0E006CB9F3 /* ATBZC2SBiddingRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBZC2SBiddingRequestManager.h; sourceTree = "<group>"; };
-		2F8DE68F2DCE0E0E006CB9F3 /* ATBZC2SBiddingRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBZC2SBiddingRequestManager.m; sourceTree = "<group>"; };
-		2F8DE6902DCE0E0E006CB9F3 /* ATBZCustomBiddingRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBZCustomBiddingRequest.h; sourceTree = "<group>"; };
-		2F8DE6912DCE0E0E006CB9F3 /* ATBZCustomBiddingRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBZCustomBiddingRequest.m; sourceTree = "<group>"; };
-		2F8DE6922DCE0E0E006CB9F3 /* ATBZInterstitialCustomAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBZInterstitialCustomAdapter.h; sourceTree = "<group>"; };
-		2F8DE6932DCE0E0E006CB9F3 /* ATBZInterstitialCustomAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBZInterstitialCustomAdapter.m; sourceTree = "<group>"; };
-		2F8DE6942DCE0E0E006CB9F3 /* ATBZInterstitialCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBZInterstitialCustomEvent.h; sourceTree = "<group>"; };
-		2F8DE6952DCE0E0E006CB9F3 /* ATBZInterstitialCustomEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBZInterstitialCustomEvent.m; sourceTree = "<group>"; };
-		2F8DE6962DCE0E0E006CB9F3 /* ATBZNativeADCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBZNativeADCustomEvent.h; sourceTree = "<group>"; };
-		2F8DE6972DCE0E0E006CB9F3 /* ATBZNativeADCustomEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBZNativeADCustomEvent.m; sourceTree = "<group>"; };
-		2F8DE6982DCE0E0E006CB9F3 /* ATBZNativeCustomAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBZNativeCustomAdapter.h; sourceTree = "<group>"; };
-		2F8DE6992DCE0E0E006CB9F3 /* ATBZNativeCustomAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBZNativeCustomAdapter.m; sourceTree = "<group>"; };
-		2F8DE69A2DCE0E0E006CB9F3 /* ATBZNativeCustomRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBZNativeCustomRenderer.h; sourceTree = "<group>"; };
-		2F8DE69B2DCE0E0E006CB9F3 /* ATBZNativeCustomRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBZNativeCustomRenderer.m; sourceTree = "<group>"; };
-		2F8DE69C2DCE0E0E006CB9F3 /* ATBZSplashCustomAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBZSplashCustomAdapter.h; sourceTree = "<group>"; };
-		2F8DE69D2DCE0E0E006CB9F3 /* ATBZSplashCustomAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBZSplashCustomAdapter.m; sourceTree = "<group>"; };
-		2F8DE69E2DCE0E0E006CB9F3 /* ATBZSplashCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBZSplashCustomEvent.h; sourceTree = "<group>"; };
-		2F8DE69F2DCE0E0E006CB9F3 /* ATBZSplashCustomEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBZSplashCustomEvent.m; sourceTree = "<group>"; };
-		2F9A7DE62E2C8EBA00787A77 /* ATBZRewardedVideoCustomAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBZRewardedVideoCustomAdapter.h; sourceTree = "<group>"; };
-		2F9A7DE72E2C8EBA00787A77 /* ATBZRewardedVideoCustomAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBZRewardedVideoCustomAdapter.m; sourceTree = "<group>"; };
-		2F9A7DE92E2C8F8A00787A77 /* ATBZRewardedVideoCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATBZRewardedVideoCustomEvent.h; sourceTree = "<group>"; };
-		2F9A7DEA2E2C8F8A00787A77 /* ATBZRewardedVideoCustomEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATBZRewardedVideoCustomEvent.m; sourceTree = "<group>"; };
 		44D83BDBBF3D3D426850A3E1 /* Pods-AnyThinkSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnyThinkSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-AnyThinkSDKDemo/Pods-AnyThinkSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 		4B8C3E142BBADE1500D290AB /* ATMediaVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATMediaVideoViewController.m; sourceTree = "<group>"; };
 		4B8C3E152BBADE1500D290AB /* ATMediaVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATMediaVideoViewController.h; sourceTree = "<group>"; };
-		56152C2E2902B59A00530FF6 /* ATTMBiddingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTMBiddingRequest.m; sourceTree = "<group>"; };
-		56152C2F2902B59A00530FF6 /* ATTMSplashCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTMSplashCustomEvent.m; sourceTree = "<group>"; };
-		56152C302902B59A00530FF6 /* ATTMBiddingDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTMBiddingDelegate.h; sourceTree = "<group>"; };
-		56152C312902B59A00530FF6 /* ATTMBiddingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTMBiddingManager.h; sourceTree = "<group>"; };
-		56152C322902B59A00530FF6 /* ATTMSplashAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTMSplashAdapter.h; sourceTree = "<group>"; };
-		56152C332902B59A00530FF6 /* ATTMBiddingDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTMBiddingDelegate.m; sourceTree = "<group>"; };
-		56152C342902B59A00530FF6 /* ATTMSplashCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTMSplashCustomEvent.h; sourceTree = "<group>"; };
-		56152C352902B59A00530FF6 /* ATTMBiddingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTMBiddingRequest.h; sourceTree = "<group>"; };
-		56152C362902B59A00530FF6 /* ATTMSplashAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTMSplashAdapter.m; sourceTree = "<group>"; };
-		56152C372902B59A00530FF6 /* ATTMBiddingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTMBiddingManager.m; sourceTree = "<group>"; };
 		56152C382902B59A00530FF6 /* ATTMCustomSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATTMCustomSplashViewController.m; sourceTree = "<group>"; };
 		56152C392902B59A00530FF6 /* ATTMCustomSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATTMCustomSplashViewController.h; sourceTree = "<group>"; };
 		85EEA80B39960C835625EC2F /* Pods-AnyThinkSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnyThinkSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-AnyThinkSDKDemo/Pods-AnyThinkSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		88BA70FC2EF14F4B0067F108 /* AdScopeFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdScopeFoundation.framework; sourceTree = "<group>"; };
 		88BA70FD2EF14F4B0067F108 /* AMPSAdSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AMPSAdSDK.xcframework; sourceTree = "<group>"; };
-		88BA735E2EF3DD130067F108 /* ATAMPSC2SBiddingRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSC2SBiddingRequestManager.h; sourceTree = "<group>"; };
-		88BA735F2EF3DD130067F108 /* ATAMPSC2SBiddingRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSC2SBiddingRequestManager.m; sourceTree = "<group>"; };
-		88BA73602EF3DD130067F108 /* ATAMPSCustomBiddingRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSCustomBiddingRequest.h; sourceTree = "<group>"; };
-		88BA73612EF3DD130067F108 /* ATAMPSCustomBiddingRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSCustomBiddingRequest.m; sourceTree = "<group>"; };
-		88BA73622EF3DD130067F108 /* ATAMPSInterstitialCustomAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSInterstitialCustomAdapter.h; sourceTree = "<group>"; };
-		88BA73632EF3DD130067F108 /* ATAMPSInterstitialCustomAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSInterstitialCustomAdapter.m; sourceTree = "<group>"; };
-		88BA73642EF3DD130067F108 /* ATAMPSInterstitialCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSInterstitialCustomEvent.h; sourceTree = "<group>"; };
-		88BA73652EF3DD130067F108 /* ATAMPSInterstitialCustomEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSInterstitialCustomEvent.m; sourceTree = "<group>"; };
-		88BA73662EF3DD130067F108 /* ATAMPSNativeCustomAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSNativeCustomAdapter.h; sourceTree = "<group>"; };
-		88BA73672EF3DD130067F108 /* ATAMPSNativeCustomAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSNativeCustomAdapter.m; sourceTree = "<group>"; };
-		88BA73682EF3DD130067F108 /* ATAMPSNativeCustomRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSNativeCustomRenderer.h; sourceTree = "<group>"; };
-		88BA73692EF3DD130067F108 /* ATAMPSNativeCustomRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSNativeCustomRenderer.m; sourceTree = "<group>"; };
-		88BA736A2EF3DD130067F108 /* ATAMPSNativeExpressCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSNativeExpressCustomEvent.h; sourceTree = "<group>"; };
-		88BA736B2EF3DD130067F108 /* ATAMPSNativeExpressCustomEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSNativeExpressCustomEvent.m; sourceTree = "<group>"; };
-		88BA736C2EF3DD130067F108 /* ATAMPSSplashCustomAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSSplashCustomAdapter.h; sourceTree = "<group>"; };
-		88BA736D2EF3DD130067F108 /* ATAMPSSplashCustomAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSSplashCustomAdapter.m; sourceTree = "<group>"; };
-		88BA736E2EF3DD130067F108 /* ATAMPSSplashCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSSplashCustomEvent.h; sourceTree = "<group>"; };
-		88BA736F2EF3DD130067F108 /* ATAMPSSplashCustomEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSSplashCustomEvent.m; sourceTree = "<group>"; };
-		88BA73702EF3DD130067F108 /* ATAMPSUnifiedNativeCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSUnifiedNativeCustomEvent.h; sourceTree = "<group>"; };
-		88BA73712EF3DD130067F108 /* ATAMPSUnifiedNativeCustomEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSUnifiedNativeCustomEvent.m; sourceTree = "<group>"; };
+		88BA763D2EF553070067F108 /* ATAMPSCustomAdapterCommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSCustomAdapterCommonHeader.h; sourceTree = "<group>"; };
+		88BA763E2EF553070067F108 /* ATAMPSCustomBaseAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSCustomBaseAdapter.h; sourceTree = "<group>"; };
+		88BA763F2EF553070067F108 /* ATAMPSCustomBaseAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSCustomBaseAdapter.m; sourceTree = "<group>"; };
+		88BA76402EF553070067F108 /* ATAMPSCustomInitAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSCustomInitAdapter.h; sourceTree = "<group>"; };
+		88BA76412EF553070067F108 /* ATAMPSCustomInitAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSCustomInitAdapter.m; sourceTree = "<group>"; };
+		88BA76432EF553070067F108 /* ATAMPSCustomInterstitialAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSCustomInterstitialAdapter.h; sourceTree = "<group>"; };
+		88BA76442EF553070067F108 /* ATAMPSCustomInterstitialAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSCustomInterstitialAdapter.m; sourceTree = "<group>"; };
+		88BA76452EF553070067F108 /* ATAMPSCustomInterstitialDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSCustomInterstitialDelegate.h; sourceTree = "<group>"; };
+		88BA76462EF553070067F108 /* ATAMPSCustomInterstitialDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSCustomInterstitialDelegate.m; sourceTree = "<group>"; };
+		88BA76482EF553070067F108 /* ATAMPSCustomNativeAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSCustomNativeAdapter.h; sourceTree = "<group>"; };
+		88BA76492EF553070067F108 /* ATAMPSCustomNativeAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSCustomNativeAdapter.m; sourceTree = "<group>"; };
+		88BA764A2EF553070067F108 /* ATAMPSCustomNativeExpressDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSCustomNativeExpressDelegate.h; sourceTree = "<group>"; };
+		88BA764B2EF553070067F108 /* ATAMPSCustomNativeExpressDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSCustomNativeExpressDelegate.m; sourceTree = "<group>"; };
+		88BA764C2EF553070067F108 /* ATAMPSCustomNativeObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSCustomNativeObject.h; sourceTree = "<group>"; };
+		88BA764D2EF553070067F108 /* ATAMPSCustomNativeObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSCustomNativeObject.m; sourceTree = "<group>"; };
+		88BA764E2EF553070067F108 /* ATAMPSCustomNativeRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSCustomNativeRenderer.h; sourceTree = "<group>"; };
+		88BA764F2EF553070067F108 /* ATAMPSCustomNativeRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSCustomNativeRenderer.m; sourceTree = "<group>"; };
+		88BA76502EF553070067F108 /* ATAMPSCustomNativeUnifiedDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSCustomNativeUnifiedDelegate.h; sourceTree = "<group>"; };
+		88BA76512EF553070067F108 /* ATAMPSCustomNativeUnifiedDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSCustomNativeUnifiedDelegate.m; sourceTree = "<group>"; };
+		88BA76532EF553070067F108 /* ATAMPSCustomSplashAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSCustomSplashAdapter.h; sourceTree = "<group>"; };
+		88BA76542EF553070067F108 /* ATAMPSCustomSplashAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSCustomSplashAdapter.m; sourceTree = "<group>"; };
+		88BA76552EF553070067F108 /* ATAMPSCustomSplashDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSCustomSplashDelegate.h; sourceTree = "<group>"; };
+		88BA76562EF553070067F108 /* ATAMPSCustomSplashDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSCustomSplashDelegate.m; sourceTree = "<group>"; };
+		88BA76592EF553070067F108 /* ATAMPSC2SBiddingRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSC2SBiddingRequestManager.h; sourceTree = "<group>"; };
+		88BA765A2EF553070067F108 /* ATAMPSC2SBiddingRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSC2SBiddingRequestManager.m; sourceTree = "<group>"; };
+		88BA765B2EF553070067F108 /* ATAMPSCustomBiddingRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSCustomBiddingRequest.h; sourceTree = "<group>"; };
+		88BA765C2EF553070067F108 /* ATAMPSCustomBiddingRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSCustomBiddingRequest.m; sourceTree = "<group>"; };
 		9B1A9D6A288E82C800CC16FA /* ATNativeMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATNativeMainViewController.m; sourceTree = "<group>"; };
 		9B1A9D6B288E82C800CC16FA /* ATNativeMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATNativeMainViewController.h; sourceTree = "<group>"; };
 		9B1A9F5C288F882800CC16FA /* ATPasterVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATPasterVideoViewController.h; sourceTree = "<group>"; };
@@ -398,35 +365,6 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		2F8DE6A02DCE0E0E006CB9F3 /* BeiZi */ = {
-			isa = PBXGroup;
-			children = (
-				2F8DE68E2DCE0E0E006CB9F3 /* ATBZC2SBiddingRequestManager.h */,
-				2F8DE68F2DCE0E0E006CB9F3 /* ATBZC2SBiddingRequestManager.m */,
-				2F8DE6902DCE0E0E006CB9F3 /* ATBZCustomBiddingRequest.h */,
-				2F8DE6912DCE0E0E006CB9F3 /* ATBZCustomBiddingRequest.m */,
-				2F8DE6922DCE0E0E006CB9F3 /* ATBZInterstitialCustomAdapter.h */,
-				2F8DE6932DCE0E0E006CB9F3 /* ATBZInterstitialCustomAdapter.m */,
-				2F8DE6942DCE0E0E006CB9F3 /* ATBZInterstitialCustomEvent.h */,
-				2F8DE6952DCE0E0E006CB9F3 /* ATBZInterstitialCustomEvent.m */,
-				2F8DE6962DCE0E0E006CB9F3 /* ATBZNativeADCustomEvent.h */,
-				2F8DE6972DCE0E0E006CB9F3 /* ATBZNativeADCustomEvent.m */,
-				2F8DE6982DCE0E0E006CB9F3 /* ATBZNativeCustomAdapter.h */,
-				2F8DE6992DCE0E0E006CB9F3 /* ATBZNativeCustomAdapter.m */,
-				2F8DE69A2DCE0E0E006CB9F3 /* ATBZNativeCustomRenderer.h */,
-				2F8DE69B2DCE0E0E006CB9F3 /* ATBZNativeCustomRenderer.m */,
-				2F8DE69C2DCE0E0E006CB9F3 /* ATBZSplashCustomAdapter.h */,
-				2F8DE69D2DCE0E0E006CB9F3 /* ATBZSplashCustomAdapter.m */,
-				2F8DE69E2DCE0E0E006CB9F3 /* ATBZSplashCustomEvent.h */,
-				2F8DE69F2DCE0E0E006CB9F3 /* ATBZSplashCustomEvent.m */,
-				2F9A7DE62E2C8EBA00787A77 /* ATBZRewardedVideoCustomAdapter.h */,
-				2F9A7DE72E2C8EBA00787A77 /* ATBZRewardedVideoCustomAdapter.m */,
-				2F9A7DE92E2C8F8A00787A77 /* ATBZRewardedVideoCustomEvent.h */,
-				2F9A7DEA2E2C8F8A00787A77 /* ATBZRewardedVideoCustomEvent.m */,
-			);
-			path = BeiZi;
-			sourceTree = "<group>";
-		};
 		4B8C3E132BBADE1500D290AB /* MediaVideo */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,30 +377,11 @@
 		56152C2C2902B59A00530FF6 /* CustomAdapter */ = {
 			isa = PBXGroup;
 			children = (
-				88BA73722EF3DD130067F108 /* AMPSAd */,
-				2F8DE6A02DCE0E0E006CB9F3 /* BeiZi */,
-				56152C2D2902B59A00530FF6 /* CustomSplash */,
-				56152C382902B59A00530FF6 /* ATTMCustomSplashViewController.m */,
+				88BA76602EF553070067F108 /* ATAMPSAD */,
 				56152C392902B59A00530FF6 /* ATTMCustomSplashViewController.h */,
+				56152C382902B59A00530FF6 /* ATTMCustomSplashViewController.m */,
 			);
 			path = CustomAdapter;
-			sourceTree = "<group>";
-		};
-		56152C2D2902B59A00530FF6 /* CustomSplash */ = {
-			isa = PBXGroup;
-			children = (
-				56152C302902B59A00530FF6 /* ATTMBiddingDelegate.h */,
-				56152C332902B59A00530FF6 /* ATTMBiddingDelegate.m */,
-				56152C312902B59A00530FF6 /* ATTMBiddingManager.h */,
-				56152C372902B59A00530FF6 /* ATTMBiddingManager.m */,
-				56152C352902B59A00530FF6 /* ATTMBiddingRequest.h */,
-				56152C2E2902B59A00530FF6 /* ATTMBiddingRequest.m */,
-				56152C322902B59A00530FF6 /* ATTMSplashAdapter.h */,
-				56152C362902B59A00530FF6 /* ATTMSplashAdapter.m */,
-				56152C342902B59A00530FF6 /* ATTMSplashCustomEvent.h */,
-				56152C2F2902B59A00530FF6 /* ATTMSplashCustomEvent.m */,
-			);
-			path = CustomSplash;
 			sourceTree = "<group>";
 		};
 		88BA70FE2EF14F4B0067F108 /* TPFramework */ = {
@@ -474,31 +393,70 @@
 			path = TPFramework;
 			sourceTree = "<group>";
 		};
-		88BA73722EF3DD130067F108 /* AMPSAd */ = {
+		88BA76422EF553070067F108 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				88BA735E2EF3DD130067F108 /* ATAMPSC2SBiddingRequestManager.h */,
-				88BA735F2EF3DD130067F108 /* ATAMPSC2SBiddingRequestManager.m */,
-				88BA73602EF3DD130067F108 /* ATAMPSCustomBiddingRequest.h */,
-				88BA73612EF3DD130067F108 /* ATAMPSCustomBiddingRequest.m */,
-				88BA73622EF3DD130067F108 /* ATAMPSInterstitialCustomAdapter.h */,
-				88BA73632EF3DD130067F108 /* ATAMPSInterstitialCustomAdapter.m */,
-				88BA73642EF3DD130067F108 /* ATAMPSInterstitialCustomEvent.h */,
-				88BA73652EF3DD130067F108 /* ATAMPSInterstitialCustomEvent.m */,
-				88BA73662EF3DD130067F108 /* ATAMPSNativeCustomAdapter.h */,
-				88BA73672EF3DD130067F108 /* ATAMPSNativeCustomAdapter.m */,
-				88BA73682EF3DD130067F108 /* ATAMPSNativeCustomRenderer.h */,
-				88BA73692EF3DD130067F108 /* ATAMPSNativeCustomRenderer.m */,
-				88BA736A2EF3DD130067F108 /* ATAMPSNativeExpressCustomEvent.h */,
-				88BA736B2EF3DD130067F108 /* ATAMPSNativeExpressCustomEvent.m */,
-				88BA736C2EF3DD130067F108 /* ATAMPSSplashCustomAdapter.h */,
-				88BA736D2EF3DD130067F108 /* ATAMPSSplashCustomAdapter.m */,
-				88BA736E2EF3DD130067F108 /* ATAMPSSplashCustomEvent.h */,
-				88BA736F2EF3DD130067F108 /* ATAMPSSplashCustomEvent.m */,
-				88BA73702EF3DD130067F108 /* ATAMPSUnifiedNativeCustomEvent.h */,
-				88BA73712EF3DD130067F108 /* ATAMPSUnifiedNativeCustomEvent.m */,
+				88BA763D2EF553070067F108 /* ATAMPSCustomAdapterCommonHeader.h */,
+				88BA763E2EF553070067F108 /* ATAMPSCustomBaseAdapter.h */,
+				88BA763F2EF553070067F108 /* ATAMPSCustomBaseAdapter.m */,
+				88BA76402EF553070067F108 /* ATAMPSCustomInitAdapter.h */,
+				88BA76412EF553070067F108 /* ATAMPSCustomInitAdapter.m */,
 			);
-			path = AMPSAd;
+			path = Base;
+			sourceTree = "<group>";
+		};
+		88BA76472EF553070067F108 /* Interstitial */ = {
+			isa = PBXGroup;
+			children = (
+				88BA76432EF553070067F108 /* ATAMPSCustomInterstitialAdapter.h */,
+				88BA76442EF553070067F108 /* ATAMPSCustomInterstitialAdapter.m */,
+				88BA76452EF553070067F108 /* ATAMPSCustomInterstitialDelegate.h */,
+				88BA76462EF553070067F108 /* ATAMPSCustomInterstitialDelegate.m */,
+			);
+			path = Interstitial;
+			sourceTree = "<group>";
+		};
+		88BA76522EF553070067F108 /* Native */ = {
+			isa = PBXGroup;
+			children = (
+				88BA76482EF553070067F108 /* ATAMPSCustomNativeAdapter.h */,
+				88BA76492EF553070067F108 /* ATAMPSCustomNativeAdapter.m */,
+				88BA764A2EF553070067F108 /* ATAMPSCustomNativeExpressDelegate.h */,
+				88BA764B2EF553070067F108 /* ATAMPSCustomNativeExpressDelegate.m */,
+				88BA764C2EF553070067F108 /* ATAMPSCustomNativeObject.h */,
+				88BA764D2EF553070067F108 /* ATAMPSCustomNativeObject.m */,
+				88BA764E2EF553070067F108 /* ATAMPSCustomNativeRenderer.h */,
+				88BA764F2EF553070067F108 /* ATAMPSCustomNativeRenderer.m */,
+				88BA76502EF553070067F108 /* ATAMPSCustomNativeUnifiedDelegate.h */,
+				88BA76512EF553070067F108 /* ATAMPSCustomNativeUnifiedDelegate.m */,
+			);
+			path = Native;
+			sourceTree = "<group>";
+		};
+		88BA76572EF553070067F108 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				88BA76532EF553070067F108 /* ATAMPSCustomSplashAdapter.h */,
+				88BA76542EF553070067F108 /* ATAMPSCustomSplashAdapter.m */,
+				88BA76552EF553070067F108 /* ATAMPSCustomSplashDelegate.h */,
+				88BA76562EF553070067F108 /* ATAMPSCustomSplashDelegate.m */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		88BA76602EF553070067F108 /* ATAMPSAD */ = {
+			isa = PBXGroup;
+			children = (
+				88BA76422EF553070067F108 /* Base */,
+				88BA76472EF553070067F108 /* Interstitial */,
+				88BA76522EF553070067F108 /* Native */,
+				88BA76572EF553070067F108 /* Splash */,
+				88BA76592EF553070067F108 /* ATAMPSC2SBiddingRequestManager.h */,
+				88BA765A2EF553070067F108 /* ATAMPSC2SBiddingRequestManager.m */,
+				88BA765B2EF553070067F108 /* ATAMPSCustomBiddingRequest.h */,
+				88BA765C2EF553070067F108 /* ATAMPSCustomBiddingRequest.m */,
+			);
+			path = ATAMPSAD;
 			sourceTree = "<group>";
 		};
 		9B1A9D5C288E47FC00CC16FA /* Banner */ = {
@@ -870,27 +828,6 @@
 				56152C3F2902B59A00530FF6 /* ATTMCustomSplashViewController.m in Sources */,
 				9BBD009F24863048009EAD66 /* ViewController.m in Sources */,
 				E01F86252848AC360011900C /* ATNativeSelfRenderView.m in Sources */,
-				2F8DE6A12DCE0E0E006CB9F3 /* ATBZNativeCustomRenderer.m in Sources */,
-				2F8DE6A22DCE0E0E006CB9F3 /* ATBZCustomBiddingRequest.m in Sources */,
-				2F8DE6A32DCE0E0E006CB9F3 /* ATBZSplashCustomEvent.m in Sources */,
-				2F8DE6A42DCE0E0E006CB9F3 /* ATBZC2SBiddingRequestManager.m in Sources */,
-				2F8DE6A52DCE0E0E006CB9F3 /* ATBZNativeADCustomEvent.m in Sources */,
-				2F9A7DEB2E2C8F8A00787A77 /* ATBZRewardedVideoCustomEvent.m in Sources */,
-				2F8DE6A62DCE0E0E006CB9F3 /* ATBZNativeCustomAdapter.m in Sources */,
-				2F8DE6A72DCE0E0E006CB9F3 /* ATBZInterstitialCustomAdapter.m in Sources */,
-				2F9A7DE82E2C8EBA00787A77 /* ATBZRewardedVideoCustomAdapter.m in Sources */,
-				2F8DE6A82DCE0E0E006CB9F3 /* ATBZInterstitialCustomEvent.m in Sources */,
-				88BA73732EF3DD130067F108 /* ATAMPSNativeCustomRenderer.m in Sources */,
-				88BA73742EF3DD130067F108 /* ATAMPSInterstitialCustomAdapter.m in Sources */,
-				88BA73752EF3DD130067F108 /* ATAMPSInterstitialCustomEvent.m in Sources */,
-				88BA73762EF3DD130067F108 /* ATAMPSNativeCustomAdapter.m in Sources */,
-				88BA73772EF3DD130067F108 /* ATAMPSCustomBiddingRequest.m in Sources */,
-				88BA73782EF3DD130067F108 /* ATAMPSUnifiedNativeCustomEvent.m in Sources */,
-				88BA73792EF3DD130067F108 /* ATAMPSC2SBiddingRequestManager.m in Sources */,
-				88BA737A2EF3DD130067F108 /* ATAMPSSplashCustomAdapter.m in Sources */,
-				88BA737B2EF3DD130067F108 /* ATAMPSNativeExpressCustomEvent.m in Sources */,
-				88BA737C2EF3DD130067F108 /* ATAMPSSplashCustomEvent.m in Sources */,
-				2F8DE6A92DCE0E0E006CB9F3 /* ATBZSplashCustomAdapter.m in Sources */,
 				9BF5E509289A14770085A76E /* ATBaiduTemplateRenderingAttribute.m in Sources */,
 				9BBD009924863048009EAD66 /* AppDelegate.m in Sources */,
 				9BBD00C0248630C8009EAD66 /* MTAutolayoutCategories.m in Sources */,
@@ -911,6 +848,19 @@
 				E0F3B8AB286D973F007CF5AB /* ATDemoOfferAdMode.m in Sources */,
 				04CF3220280007900083B5AA /* ATHomeFootView.m in Sources */,
 				9BBD009C24863048009EAD66 /* SceneDelegate.m in Sources */,
+				88BA76652EF553070067F108 /* ATAMPSCustomSplashAdapter.m in Sources */,
+				88BA76662EF553070067F108 /* ATAMPSCustomInitAdapter.m in Sources */,
+				88BA76672EF553070067F108 /* ATAMPSCustomSplashDelegate.m in Sources */,
+				88BA76682EF553070067F108 /* ATAMPSCustomBiddingRequest.m in Sources */,
+				88BA76692EF553070067F108 /* ATAMPSCustomNativeObject.m in Sources */,
+				88BA766A2EF553070067F108 /* ATAMPSCustomNativeUnifiedDelegate.m in Sources */,
+				88BA766B2EF553070067F108 /* ATAMPSCustomNativeExpressDelegate.m in Sources */,
+				88BA766C2EF553070067F108 /* ATAMPSCustomInterstitialAdapter.m in Sources */,
+				88BA766D2EF553070067F108 /* ATAMPSCustomBaseAdapter.m in Sources */,
+				88BA766E2EF553070067F108 /* ATAMPSCustomInterstitialDelegate.m in Sources */,
+				88BA766F2EF553070067F108 /* ATAMPSC2SBiddingRequestManager.m in Sources */,
+				88BA76702EF553070067F108 /* ATAMPSCustomNativeAdapter.m in Sources */,
+				88BA76712EF553070067F108 /* ATAMPSCustomNativeRenderer.m in Sources */,
 				9BBD00BE248630C8009EAD66 /* ATBannerViewController.m in Sources */,
 				9B9FEC2128925F3200B905ED /* ATNativeExpressViewController.m in Sources */,
 				04CF323F28000FB70083B5AA /* ATNativeRenderView.m in Sources */,

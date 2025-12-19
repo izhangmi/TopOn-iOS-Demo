@@ -32,7 +32,10 @@ target 'AnyThinkSDKDemo' do
   use_frameworks!
 
 #  pod 'AnyThinkiOS','6.4.87'
-pod 'AnyThinkiOS'
+  pod 'AnyThinkiOS'
+  # HJC: ADX SDK 警告解决方案
+  # 注意：AnyThinkiOS 6.5.40 版本中没有 AnyThinkADX subspec
+  # ADX SDK 可能需要通过其他方式引入，或需要在后台移除 ADX 配置
 #pod 'TPNiOS', ' 6.4.87'
   pod 'BeiZiSDK-iOS/BeiZiSDK-iOS', '~> 4.90.6.2'
 

@@ -11,6 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+// HJC: ATAMPS C2S 竞价请求管理器
 @interface ATAMPSC2SBiddingRequestManager : NSObject
 
 + (instancetype)sharedInstance;
@@ -24,4 +25,3 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
-

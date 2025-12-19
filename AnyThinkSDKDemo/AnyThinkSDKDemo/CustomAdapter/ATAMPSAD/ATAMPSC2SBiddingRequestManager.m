@@ -8,9 +8,10 @@
 
 #import "ATAMPSC2SBiddingRequestManager.h"
 
+// HJC: ATAMPS C2S 竞价请求管理器实现
 @interface ATAMPSC2SBiddingRequestManager ()
 
-@property (nonatomic, strong) NSMutableDictionary *biddingAdStorageAccessor;
+@property (nonatomic, strong) NSMutableDictionary<NSString *, ATAMPSCustomBiddingRequest *> *biddingAdStorageAccessor;
 
 @end
 
@@ -40,12 +41,13 @@
 
 - (void)startWithRequestItem:(ATAMPSCustomBiddingRequest *)request {
     if (request.unitID) {
-        [self.biddingAdStorageAccessor setObject:request forKey:request.unitID];
-        if (request.customObject && [request.customObject respondsToSelector:@selector(setDelegate:)]) {
-            [request.customObject setValue:request.customEvent forKey:@"delegate"];
+        @synchronized (self) {
+            [self.biddingAdStorageAccessor setObject:request forKey:request.unitID];
+            if ([request.customObject respondsToSelector:@selector(setDelegate:)]) {
+                [request.customObject setValue:request.customEvent forKey:@"delegate"];
+            }
         }
     }
 }
 
 @end
-

@@ -7,7 +7,7 @@
 //
 
 #import "ATSplashViewController.h"
-#import <AnyThinkSplash/AnyThinkSplash.h>
+#import <AnyThinkSDK/AnyThinkSDK.h>
 #import "ATADFootView.h"
 #import "ATModelButton.h"
 #import "ATMenuView.h"
@@ -54,6 +54,8 @@
 - (NSDictionary<NSString *,NSString *> *)placementIDs {
     
     return @{
+        @"AMPS Splash":           @"b694253242624a",  // HJC测试: AMPS 开屏广告位ID（非竞价：unitid=125554）
+        @"AMPS Splash(Bidding)":  @"b694253242624a",  // AAAAA: 竞价模式测试用（竞价：unitid=125548），需要在后台配置为竞价模式
         @"All":                   @"b6621e416e57af",
     };
 }
@@ -189,6 +191,11 @@
 #pragma mark - Action
 // 加载广告
 - (void)loadSplashAd {
+    // AAAAA: 切换测试竞价/非竞价模式（实际上竞价/非竞价由 TopOn 后台配置决定）
+    // 如果要测试不同的广告源配置（不同 unitid），可以在 placementIDs 中选择不同的项
+    // 非竞价模式：选择 "AMPS Splash"
+    // 竞价模式：选择 "AMPS Splash(Bidding)"（需要在后台配置为竞价模式）
+    
     UIInterfaceOrientation deviceOrientaion = [self currentInterfaceOrientation];
     BOOL landscape = UIInterfaceOrientationIsLandscape(deviceOrientaion);
     
@@ -202,21 +209,15 @@
     
     NSMutableDictionary *mutableDict = [NSMutableDictionary dictionary];
     // 设置开屏广告中支持广告源设置加载超时时间，并不是整个广告位请求的时间
-    [mutableDict setValue:@5.5 forKey:kATSplashExtraTolerateTimeoutKey];
+    [mutableDict setValue:@10 forKey:kATSplashExtraTolerateTimeoutKey];
     
-    // HJC测试: 在此处测试 AMPS Splash 开屏广告
-    // 1. 在 TopOn 后台配置 AMPS 渠道，设置 appid 和 unitid
-    // 2. 在 placementIDs 中添加 AMPS 的 placementID，例如: @"AMPS": @"your_placement_id"
-    // 3. 将下面的 placementID 改为 self.placementID 或直接使用你的 AMPS placementID
-    // 4. 调用 loadSplashAd 方法加载广告，等待回调成功后调用 showSplashAd 展示
-    [[ATAdManager sharedManager] loadADWithPlacementID:@"b6621e416e57af"
+    NSLog(@"HJC测试: 开始加载 Splash 广告，placementID = %@", self.placementID);
+    [[ATAdManager sharedManager] loadADWithPlacementID:self.placementID
                                                  extra:mutableDict
                                               delegate:self
                                          containerView:label];
     
-    // 从你们的TopOn后台导出的兜底广告源进行设置
-    //导出格式如：{\"unit_id\":1331013,\"nw_firm_id\":22,\"adapter_class\":\"ATBaiduSplashAdapter\",\"content\":\"{\\\"button_type\\\":\\\"0\\\",\\\"ad_place_id\\\":\\\"7852632\\\",\\\"app_id\\\":\\\"e232e8e6\\\"}\"}
-    // [[ATAdManager sharedManager] loadADWithPlacementID:self.placementID extra:extra delegate:self containerView:label defaultAdSourceConfig:self.defaultAdSourceConfigStr];
+    NSLog(@"HJC测试: 广告位ID: %@, extra: %@", self.placementID, mutableDict);
 }
 
 // 检查广告缓存，是否iReady
