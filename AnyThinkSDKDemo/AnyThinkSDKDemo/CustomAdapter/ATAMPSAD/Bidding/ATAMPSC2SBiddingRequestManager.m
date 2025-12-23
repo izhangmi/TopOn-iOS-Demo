@@ -8,7 +8,6 @@
 
 #import "ATAMPSC2SBiddingRequestManager.h"
 
-// HJC: ATAMPS C2S 竞价请求管理器实现
 @interface ATAMPSC2SBiddingRequestManager ()
 
 @property (nonatomic, strong) NSMutableDictionary<NSString *, ATAMPSCustomBiddingRequest *> *biddingAdStorageAccessor;

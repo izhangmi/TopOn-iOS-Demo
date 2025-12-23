@@ -37,16 +37,16 @@
 		88BA76652EF553070067F108 /* ATAMPSCustomSplashAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA76542EF553070067F108 /* ATAMPSCustomSplashAdapter.m */; };
 		88BA76662EF553070067F108 /* ATAMPSCustomInitAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA76412EF553070067F108 /* ATAMPSCustomInitAdapter.m */; };
 		88BA76672EF553070067F108 /* ATAMPSCustomSplashDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA76562EF553070067F108 /* ATAMPSCustomSplashDelegate.m */; };
-		88BA76682EF553070067F108 /* ATAMPSCustomBiddingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA765C2EF553070067F108 /* ATAMPSCustomBiddingRequest.m */; };
 		88BA76692EF553070067F108 /* ATAMPSCustomNativeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA764D2EF553070067F108 /* ATAMPSCustomNativeObject.m */; };
 		88BA766A2EF553070067F108 /* ATAMPSCustomNativeUnifiedDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA76512EF553070067F108 /* ATAMPSCustomNativeUnifiedDelegate.m */; };
 		88BA766B2EF553070067F108 /* ATAMPSCustomNativeExpressDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA764B2EF553070067F108 /* ATAMPSCustomNativeExpressDelegate.m */; };
 		88BA766C2EF553070067F108 /* ATAMPSCustomInterstitialAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA76442EF553070067F108 /* ATAMPSCustomInterstitialAdapter.m */; };
 		88BA766D2EF553070067F108 /* ATAMPSCustomBaseAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA763F2EF553070067F108 /* ATAMPSCustomBaseAdapter.m */; };
 		88BA766E2EF553070067F108 /* ATAMPSCustomInterstitialDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA76462EF553070067F108 /* ATAMPSCustomInterstitialDelegate.m */; };
-		88BA766F2EF553070067F108 /* ATAMPSC2SBiddingRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA765A2EF553070067F108 /* ATAMPSC2SBiddingRequestManager.m */; };
 		88BA76702EF553070067F108 /* ATAMPSCustomNativeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA76492EF553070067F108 /* ATAMPSCustomNativeAdapter.m */; };
 		88BA76712EF553070067F108 /* ATAMPSCustomNativeRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA764F2EF553070067F108 /* ATAMPSCustomNativeRenderer.m */; };
+		88BA767A2EF5630E0067F108 /* ATAMPSC2SBiddingRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA76762EF5630E0067F108 /* ATAMPSC2SBiddingRequestManager.m */; };
+		88BA767B2EF5630E0067F108 /* ATAMPSCustomBiddingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA76782EF5630E0067F108 /* ATAMPSCustomBiddingRequest.m */; };
 		9B1A9D6C288E82C800CC16FA /* ATNativeMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A9D6A288E82C800CC16FA /* ATNativeMainViewController.m */; };
 		9B1A9F5E288F882800CC16FA /* ATPasterVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A9F5D288F882800CC16FA /* ATPasterVideoViewController.m */; };
 		9B1A9F66288FC9A500CC16FA /* ATDrawListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1A9F65288FC9A500CC16FA /* ATDrawListViewController.m */; };
@@ -176,10 +176,10 @@
 		88BA76542EF553070067F108 /* ATAMPSCustomSplashAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSCustomSplashAdapter.m; sourceTree = "<group>"; };
 		88BA76552EF553070067F108 /* ATAMPSCustomSplashDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSCustomSplashDelegate.h; sourceTree = "<group>"; };
 		88BA76562EF553070067F108 /* ATAMPSCustomSplashDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSCustomSplashDelegate.m; sourceTree = "<group>"; };
-		88BA76592EF553070067F108 /* ATAMPSC2SBiddingRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSC2SBiddingRequestManager.h; sourceTree = "<group>"; };
-		88BA765A2EF553070067F108 /* ATAMPSC2SBiddingRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSC2SBiddingRequestManager.m; sourceTree = "<group>"; };
-		88BA765B2EF553070067F108 /* ATAMPSCustomBiddingRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSCustomBiddingRequest.h; sourceTree = "<group>"; };
-		88BA765C2EF553070067F108 /* ATAMPSCustomBiddingRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSCustomBiddingRequest.m; sourceTree = "<group>"; };
+		88BA76752EF5630E0067F108 /* ATAMPSC2SBiddingRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSC2SBiddingRequestManager.h; sourceTree = "<group>"; };
+		88BA76762EF5630E0067F108 /* ATAMPSC2SBiddingRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSC2SBiddingRequestManager.m; sourceTree = "<group>"; };
+		88BA76772EF5630E0067F108 /* ATAMPSCustomBiddingRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATAMPSCustomBiddingRequest.h; sourceTree = "<group>"; };
+		88BA76782EF5630E0067F108 /* ATAMPSCustomBiddingRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATAMPSCustomBiddingRequest.m; sourceTree = "<group>"; };
 		9B1A9D6A288E82C800CC16FA /* ATNativeMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATNativeMainViewController.m; sourceTree = "<group>"; };
 		9B1A9D6B288E82C800CC16FA /* ATNativeMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATNativeMainViewController.h; sourceTree = "<group>"; };
 		9B1A9F5C288F882800CC16FA /* ATPasterVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATPasterVideoViewController.h; sourceTree = "<group>"; };
@@ -447,16 +447,24 @@
 		88BA76602EF553070067F108 /* ATAMPSAD */ = {
 			isa = PBXGroup;
 			children = (
+				88BA76792EF5630E0067F108 /* Bidding */,
 				88BA76422EF553070067F108 /* Base */,
 				88BA76472EF553070067F108 /* Interstitial */,
 				88BA76522EF553070067F108 /* Native */,
 				88BA76572EF553070067F108 /* Splash */,
-				88BA76592EF553070067F108 /* ATAMPSC2SBiddingRequestManager.h */,
-				88BA765A2EF553070067F108 /* ATAMPSC2SBiddingRequestManager.m */,
-				88BA765B2EF553070067F108 /* ATAMPSCustomBiddingRequest.h */,
-				88BA765C2EF553070067F108 /* ATAMPSCustomBiddingRequest.m */,
 			);
 			path = ATAMPSAD;
+			sourceTree = "<group>";
+		};
+		88BA76792EF5630E0067F108 /* Bidding */ = {
+			isa = PBXGroup;
+			children = (
+				88BA76752EF5630E0067F108 /* ATAMPSC2SBiddingRequestManager.h */,
+				88BA76762EF5630E0067F108 /* ATAMPSC2SBiddingRequestManager.m */,
+				88BA76772EF5630E0067F108 /* ATAMPSCustomBiddingRequest.h */,
+				88BA76782EF5630E0067F108 /* ATAMPSCustomBiddingRequest.m */,
+			);
+			path = Bidding;
 			sourceTree = "<group>";
 		};
 		9B1A9D5C288E47FC00CC16FA /* Banner */ = {
@@ -851,14 +859,12 @@
 				88BA76652EF553070067F108 /* ATAMPSCustomSplashAdapter.m in Sources */,
 				88BA76662EF553070067F108 /* ATAMPSCustomInitAdapter.m in Sources */,
 				88BA76672EF553070067F108 /* ATAMPSCustomSplashDelegate.m in Sources */,
-				88BA76682EF553070067F108 /* ATAMPSCustomBiddingRequest.m in Sources */,
 				88BA76692EF553070067F108 /* ATAMPSCustomNativeObject.m in Sources */,
 				88BA766A2EF553070067F108 /* ATAMPSCustomNativeUnifiedDelegate.m in Sources */,
 				88BA766B2EF553070067F108 /* ATAMPSCustomNativeExpressDelegate.m in Sources */,
 				88BA766C2EF553070067F108 /* ATAMPSCustomInterstitialAdapter.m in Sources */,
 				88BA766D2EF553070067F108 /* ATAMPSCustomBaseAdapter.m in Sources */,
 				88BA766E2EF553070067F108 /* ATAMPSCustomInterstitialDelegate.m in Sources */,
-				88BA766F2EF553070067F108 /* ATAMPSC2SBiddingRequestManager.m in Sources */,
 				88BA76702EF553070067F108 /* ATAMPSCustomNativeAdapter.m in Sources */,
 				88BA76712EF553070067F108 /* ATAMPSCustomNativeRenderer.m in Sources */,
 				9BBD00BE248630C8009EAD66 /* ATBannerViewController.m in Sources */,
@@ -875,6 +881,8 @@
 				2F8DE68D2DCE012C006CB9F3 /* UIView+TGExtension.m in Sources */,
 				2F8DE67D2DCE00E1006CB9F3 /* TGBaseViewController.m in Sources */,
 				9BBD00C1248630C8009EAD66 /* ATNativeSelfRenderViewController.m in Sources */,
+				88BA767A2EF5630E0067F108 /* ATAMPSC2SBiddingRequestManager.m in Sources */,
+				88BA767B2EF5630E0067F108 /* ATAMPSCustomBiddingRequest.m in Sources */,
 				9BBD00BF248630C8009EAD66 /* ATInterstitialViewController.m in Sources */,
 				04CF322B280008520083B5AA /* ATRewardVideoViewController.m in Sources */,
 				04CF3227280007900083B5AA /* ATMenuView.m in Sources */,

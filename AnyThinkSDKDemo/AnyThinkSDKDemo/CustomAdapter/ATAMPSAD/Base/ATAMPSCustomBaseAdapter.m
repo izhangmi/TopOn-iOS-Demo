@@ -14,9 +14,8 @@
 #pragma mark - adapter init class name define
 
 - (Class)initializeClassName {
-    NSLog(@"HJC测试: ATAMPSCustomBaseAdapter initializeClassName 被调用，返回 ATAMPSCustomInitAdapter");
+    NSLog(@"ATAMPSCustomBaseAdapter initializeClassName被调用，返回 ATAMPSCustomInitAdapter");
     return [ATAMPSCustomInitAdapter class];
 }
 
 @end
-

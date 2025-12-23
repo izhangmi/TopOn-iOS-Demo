@@ -10,19 +10,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-// HJC: ATAMPS 广告格式枚举
 typedef NS_ENUM(NSInteger, ATAMPSAdFormat) {
     ATAMPSAdFormatSplash = 0,
     ATAMPSAdFormatNative = 1,
     ATAMPSAdFormatInterstitial = 2
 };
 
-// HJC: ATAMPS 自定义竞价请求对象
 @interface ATAMPSCustomBiddingRequest : NSObject
 
 @property (nonatomic, strong) id customObject;
 @property (nonatomic, strong) ATUnitGroupModel *unitGroup;
-@property (nonatomic, strong) id customEvent; // HJC: 使用 id 类型，支持不同类型的 delegate
+@property (nonatomic, strong) id customEvent;
 @property (nonatomic, assign) NSTimeInterval tolerateTimeout;
 @property (nonatomic, copy) NSString *unitID;
 @property (nonatomic, copy) NSString *placementID;
